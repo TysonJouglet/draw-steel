@@ -38,6 +38,7 @@
           {{/if}}
         </span>
       </div>
+      
     </div>
     <div class="resource">
       {{#if system.class}}
@@ -65,7 +66,27 @@
       {{/if}}
       {{/if}}
     </div>
+    <div class="resource">
+      <label class="resource-label">
+        {{systemFields.hero.fields.shields.label}}
+      </label>
+      <div class="resource-content flexrow">
+        <div class="resource-current">
+          {{formInput systemFields.hero.fields.shields value=systemSource.hero.shields dataset=datasets.isSource}}
+        </div>
+      </div>
     {{/if}}
+    </div>
+    <div class="resource">
+      <label class="resource-label">
+        {{systemFields.hero.fields.surges.label}}
+      </label>
+      <div class="resource-content flexrow">
+        <div class="resource-current">
+          {{formInput systemFields.hero.fields.surges value=systemSource.hero.surges.value dataset=datasets.isSource}}
+        </div>
+      </div>
+    </div>
   </fieldset>
   <fieldset class="characteristics flexrow">
     <legend>{{systemFields.characteristics.label}}</legend>

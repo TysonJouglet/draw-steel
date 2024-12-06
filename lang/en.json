@@ -141,6 +141,12 @@
             },
             "skills": {
               "label": "Skills"
+            },
+            "shields": {
+              "label": "Shields"
+            },
+            "surges": {
+              "label": "Surges"
             }
           }
         }

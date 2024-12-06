@@ -31,7 +31,9 @@ export default class CharacterModel extends BaseActorModel {
       victories: requiredInteger({initial: 0}),
       renown: requiredInteger({initial: 0}),
       skills: new fields.SetField(new fields.StringField({choices: ds.CONFIG.skills.list})),
-      preferredKit: new fields.DocumentIdField()
+      preferredKit: new fields.DocumentIdField(),
+      shields: requiredInteger({initial: 0}),
+      surges: requiredInteger({initial: 0})   
     });
 
     return schema;

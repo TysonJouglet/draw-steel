@@ -50,6 +50,8 @@ declare module "./character.mjs" {
       renown: number;
       skills: Set<string>;
       preferredKit: string;
+      shields: number;
+      surges: number;
     }
   }
 }
