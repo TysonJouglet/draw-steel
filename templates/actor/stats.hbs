@@ -1,5 +1,6 @@
 {{! Stats Tab }}
 <section class="tab stats {{tab.cssClass}}" data-group="primary" data-tab="stats">
+  {{log this}}
   <fieldset class="resources flexrow">
     <legend>{{localize "DRAW_STEEL.Sheet.Resources"}}</legend>
     <div class="resource">
@@ -66,24 +67,24 @@
       {{/if}}
       {{/if}}
     </div>
+    {{/if}}
     <div class="resource">
       <label class="resource-label">
-        {{systemFields.hero.fields.shields.label}}
+        {{systemFields.shields.label}}
       </label>
       <div class="resource-content flexrow">
         <div class="resource-current">
-          {{formInput systemFields.hero.fields.shields value=systemSource.hero.shields dataset=datasets.isSource}}
+          {{formInput systemFields.shields.fields.value value=systemSource.shields.value dataset=datasets.isSource}}
         </div>
       </div>
-    {{/if}}
     </div>
     <div class="resource">
       <label class="resource-label">
-        {{systemFields.hero.fields.surges.label}}
+        {{systemFields.surges.label}}
       </label>
       <div class="resource-content flexrow">
         <div class="resource-current">
-          {{formInput systemFields.hero.fields.surges value=systemSource.hero.surges.value dataset=datasets.isSource}}
+          {{formInput systemFields.surges.fields.value value=systemSource.surges.value dataset=datasets.isSource}}
         </div>
       </div>
     </div>

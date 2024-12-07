@@ -43,6 +43,10 @@ export default class BaseActorModel extends foundry.abstract.TypeDataModel {
       weaknesses: damageTypes(requiredInteger, {all: true, keywords: true})
     });
 
+    schema.shields = barAttribute(3);
+
+    schema.surges = barAttribute(3);
+
     return schema;
   }
 
